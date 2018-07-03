@@ -105,7 +105,7 @@ with tf.Session() as sess:
     trainXYOrig = train.values
     m = trainXYOrig.shape[0]
     trainXOrig = trainXYOrig[:, 1:].reshape(-1, 784)  # m * height * width * 1
-    trainX = trainXOrig / 255                               # 0-1
+    trainX imagesimages= trainXOrig / 255                               # 0-1
     
     trainYOrig = trainXYOrig[:, 0]
     trainY = np.eye(10)[trainYOrig, :]                      # one-hot
