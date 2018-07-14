@@ -88,3 +88,4 @@ predictions = model.predict_classes(test_images, verbose=0)
 
 submissions=pd.DataFrame({"ImageId": list(range(1,len(predictions)+1)),"Label": predictions})
 submissions.to_csv("mnist_predictions.csv", index=False, header=True)
+
