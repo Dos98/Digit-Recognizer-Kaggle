@@ -93,7 +93,7 @@ history = model.fit(X_train, y_train,
 		batch_size=BATCH_SIZE, epochs=NB_EPOCH, 
 		verbose=VERBOSE, validation_split=VALIDATION_SPLIT)
 
-print("fitting done")
+print("fitting done")LeNet Arch with dropout 0.25 on MNIST dataset
 
 # score = model.evaluate(X_test, y_test, verbose=VERBOSE)
 # print("\nTest score:", score[0])
